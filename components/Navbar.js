@@ -11,7 +11,7 @@ export default function Navbar() {
     <div className="top-0 w-full ">
       <Section>
         <div className="flex justify-between">
-          <Link className="text-yellow-300 font-bold" href="/index">
+          <Link className="text-yellow-300 font-bold" href="/">
             Marianna Di Vito
           </Link>
           <div className="flex  gap-6">

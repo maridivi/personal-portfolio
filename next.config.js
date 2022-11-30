@@ -6,6 +6,14 @@ const nextConfig = {
     airtableBaseId: process.env.AIRTABLE_BASE_ID,
     airtableTableName: process.env.AIRTABLE_TABLE_NAME,
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "v5.airtableusercontent.com",
+      },
+    ],
+  },
 };
 
 module.exports = nextConfig;

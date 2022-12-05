@@ -1,11 +1,12 @@
 import Container from "../components/Container";
+import ContainerBlock from "../components/ContainerBlock";
 
 import Hero from "../components/Hero";
 
 export default function Home() {
   return (
-    <Container>
+    <ContainerBlock>
       <Hero />
-    </Container>
+    </ContainerBlock>
   );
 }

@@ -17,10 +17,10 @@ export default function Navbar() {
             text="Marianna Di Vito"
             className="font-bold text-yellow-300"
           />
-          <div className="flex  gap-6">
-            <CustomLink text="About" href="/about" />
-            <CustomLink text="Projects" href="/projects" />
-            <CustomLink text="Contact" href="/contact" />
+          <div className="flex gap-3">
+            <CustomLink text="About" href="#about" />
+            <CustomLink text="Projects" href="#projects" />
+            <CustomLink text="Contact" href="#contact" />
           </div>
         </div>
       </Section>

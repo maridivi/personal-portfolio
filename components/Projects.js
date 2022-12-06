@@ -11,10 +11,13 @@ import Paragraph from "./UI/Paragraph";
 export default function Projects({ projects }) {
   return (
     <Section>
-      <div className="flex flex-col gap-8 lg:items-center">
+      <div
+        id="projects"
+        className="flex flex-col gap-8 lg:items-center pb-14 pt-16"
+      >
         <H2 className="text-2xl ">Projects</H2>
         <div className="flex flex-col gap-6  max-w-4xl ">
-          {projects.map((project, key) => {
+          {projects?.map((project, key) => {
             return <ProjectCard key={key} project={project} />;
           })}
         </div>
@@ -29,11 +32,16 @@ const ProjectCard = ({ project }) => {
   return (
     <div className="flex flex-col items-center md:flex-row md:items-start gap-6 rounded-lg bg-electric-200 overflow-hidden ">
       <div className="relative w-64 h-64 overflow-hidden shrink-0">
-        <Image alt={title} src={img} className="rounded-l-lg" layout="fill" />
+        <Image
+          alt={title}
+          src={img}
+          className="rounded-lg md:rounded-r-none"
+          layout="fill"
+        />
       </div>
 
       <div className="p-6 gap-4 flex flex-col">
-        <H3>{title}</H3>
+        <H3 className="font-bold">{title}</H3>
 
         <Paragraph>{<Markdown>{description}</Markdown>}</Paragraph>
 

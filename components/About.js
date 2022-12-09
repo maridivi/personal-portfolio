@@ -16,9 +16,9 @@ export default function About() {
     <Section>
       <div
         id="about"
-        className="flex flex-col gap-24 lg:gap-14 pb-14 pt-16 mx-auto lg:items-center max-w-4xl"
+        className="flex flex-col gap-24 lg:gap-14 py-48 mx-auto lg:items-center max-w-4xl"
       >
-        <div className="flex flex-col gap-6 lg:w-2/3">
+        <div className="flex flex-col gap-6 ">
           <H2 className="text-center">About Me</H2>
           <Paragraph classname="text-lg">
             Hi! My name is Marianna and I am a self-taught front-end developer.
@@ -30,9 +30,9 @@ export default function About() {
             knowledge and acquire new skills.
           </Paragraph>
         </div>
-        <div className="flex-flex-col lg:w-1/3 text-center">
+        <div className="flex-flex-col text-center">
           <H2>Skills</H2>
-          <div className="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-3 mt-8 gap-3">
+          <div className="grid grid-cols-3 mt-8 gap-3 w-3/4 sm:w-1/2 lg:w-full mx-auto ">
             <Skill icon={<ImHtmlFive size={48} />} text="HTML 5" />
             <Skill icon={<SiCss3 size={48} />} text="CSS3" />
             <Skill icon={<SiJavascript size={48} />} text="Javascript" />

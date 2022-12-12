@@ -11,9 +11,12 @@ export default function Footer() {
   return (
     <div className="bottom-0 min-h-0 overflow-hidden">
       <Section>
-        <Paragraph className="text-slate-300">
-          © {getYear()} Created by Marianna Di Vito
-        </Paragraph>
+        <small className="text-slate-300">
+          © {getYear()} Created by{" "}
+          <a href="https://github.com/maridivi/personal-portfolio">
+            Marianna Di Vito
+          </a>
+        </small>
       </Section>
     </div>
   );

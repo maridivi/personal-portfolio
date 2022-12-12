@@ -19,8 +19,8 @@ export default function About() {
         className="flex flex-col gap-24 lg:gap-14 py-48 mx-auto lg:items-center max-w-4xl"
       >
         <div className="flex flex-col gap-6 ">
-          <H2 className="text-center">About Me</H2>
-          <Paragraph classname="text-lg">
+          <H2 className="text-center text-yellow-300">About Me</H2>
+          <Paragraph>
             Hi! My name is Marianna and I am a self-taught front-end developer.
             I love building responsive and beautiful websites and applications.
             My interest in web development started in 2020, when I began to
@@ -31,7 +31,7 @@ export default function About() {
           </Paragraph>
         </div>
         <div className="flex-flex-col text-center">
-          <H2>Skills</H2>
+          <H2 className="text-yellow-300">Skills</H2>
           <div className="grid grid-cols-3 mt-8 gap-3 w-3/4 sm:w-1/2 lg:w-full mx-auto ">
             <Skill icon={<ImHtmlFive size={48} />} text="HTML 5" />
             <Skill icon={<SiCss3 size={48} />} text="CSS3" />

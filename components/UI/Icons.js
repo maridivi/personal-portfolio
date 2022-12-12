@@ -20,5 +20,5 @@ export const InstagramIcon = () => {
 };
 
 export const Icon = ({ icon: Icon }) => {
-  return <div className="text-slate-300 hover:opacity-20 ">{Icon}</div>;
+  return <div className="text-slate-300 hover-animation">{Icon}</div>;
 };

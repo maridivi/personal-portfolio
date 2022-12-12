@@ -15,7 +15,7 @@ export default function Projects({ projects }) {
         id="projects"
         className="flex flex-col gap-8 lg:items-center pb-14 pt-16"
       >
-        <H2 className="text-2xl ">Projects</H2>
+        <H2 className="text-2xl text-yellow-300">Projects</H2>
         <div className="flex flex-col gap-6  max-w-4xl ">
           {projects?.map((project, key) => {
             return <ProjectCard key={key} project={project} />;
@@ -30,7 +30,7 @@ const ProjectCard = ({ project }) => {
   const { title, img, description, techList, linkRepo, linkSite } = project;
 
   return (
-    <div className="flex flex-col items-center md:flex-row md:items-start gap-6 rounded-lg bg-electric-200 overflow-hidden ">
+    <div className="flex flex-col items-center md:flex-row md:items-start gap-6 rounded-lg bg-electric-200 overflow-hidden hover:bg-electric-250">
       <div className="relative w-64 h-64 overflow-hidden shrink-0">
         <Image
           alt={title}

@@ -42,7 +42,7 @@ export default function ContactForm() {
   return (
     <Section>
       <div className="flex flex-col py-48" id="contact">
-        <H2 className="text-center">Get in touch</H2>
+        <H2 className="text-center text-yellow-300 ">Get in touch</H2>
         <form
           onSubmit={(e) => {
             e.preventDefault();
@@ -69,7 +69,7 @@ export default function ContactForm() {
 
             <button
               type="submit"
-              className="bg-yellow-400 rounded-md w-1/3 mx-2 mt-8 py-2 text-slate-800 text-sm font-bold"
+              className="bg-yellow-400 rounded-md w-1/3 mx-2 mt-8 py-2 text-slate-800 text-sm font-bold hover:opacity-70 "
             >
               Send Message
             </button>

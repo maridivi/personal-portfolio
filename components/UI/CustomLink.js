@@ -3,9 +3,7 @@ import Link from "next/link";
 export default function CustomLink({ href, text, className }) {
   return (
     <Link href={href}>
-      <span
-        className={`${className} text-slate-300 cursor-pointer hover:opacity-10`}
-      >
+      <span className={`${className}  cursor-pointer hover:text-yellow-300`}>
         {text}
       </span>
     </Link>

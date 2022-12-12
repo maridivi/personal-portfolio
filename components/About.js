@@ -18,7 +18,7 @@ export default function About() {
         id="about"
         className="flex flex-col gap-24 lg:gap-14 py-48 mx-auto lg:items-center max-w-4xl"
       >
-        <div className="flex flex-col gap-6 ">
+        <div className="flex flex-col gap-6 w-5/6 md:w-3/4 mx-auto">
           <H2 className="text-center text-yellow-300">About Me</H2>
           <Paragraph>
             Hi! My name is Marianna and I am a self-taught front-end developer.

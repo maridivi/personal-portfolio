@@ -50,8 +50,9 @@ export default function ContactForm() {
           }}
         >
           <div className="w-96 mx-auto mt-8">
-            <CustomInput label="Name" inputName="name" />
+            <CustomInput label="Name" inputName="name" type="text" />
             <CustomInput
+              type="email"
               inputName="email"
               label="Email"
               value={user.email}

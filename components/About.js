@@ -18,21 +18,25 @@ export default function About() {
         id="about"
         className="flex flex-col gap-24 lg:gap-14 py-48 mx-auto lg:items-center max-w-4xl"
       >
-        <div className="flex flex-col gap-6 w-5/6 md:w-3/4 mx-auto">
-          <H2 className="text-center text-yellow-300">About Me</H2>
+        <div className="flex flex-col gap-6 w-5/6 md:w-3/4 mx-auto justify-center">
+          <H2 className=" text-yellow-300 mx-auto">About Me</H2>
           <Paragraph>
             Hi! My name is Marianna and I am a self-taught front-end developer.
-            I love building responsive and beautiful websites and applications.
-            My interest in web development started in 2020, when I began to
-            learn HTML, CSS, Javascript and React through online resources. In
-            the meantime, I created some simple projects to practice more and
-            grasp the new concepts better. I am constantly seeking to broaden my
-            knowledge and acquire new skills.
+            After 5 years working as a dentist, I decided to pursue my interest
+            in web development and began teaching myself to code. Through online
+            courses and hands-on projects, I became comfortable with HTML, CSS,
+            Javascript, and React. My background in dentistry has given me
+            unique problem-solving skills and attention to detail that I believe
+            will make me a valuable contributor to any project. I am grateful
+            for the opportunity to combine my love of technology with my desire
+            to help others and make a positive impact. I am excited to continue
+            learning and growing as a developer, and hope to find opportunities
+            where I can use my skills to make a meaningful difference.
           </Paragraph>
         </div>
-        <div className="flex-flex-col text-center">
-          <H2 className="text-yellow-300">Skills</H2>
-          <div className="grid grid-cols-3 mt-8 gap-3 w-3/4 sm:w-1/2 lg:w-full mx-auto ">
+        <div className="flex flex-col w-5/6 md:w-3/4 mx-auto justify-center">
+          <H2 className="text-yellow-300 mx-auto">Skills</H2>
+          <div className="grid grid-cols-3 mt-8 gap-3 w-3/4 sm:w-1/2 lg:w-full mx-auto">
             <Skill icon={<ImHtmlFive size={48} />} text="HTML 5" />
             <Skill icon={<SiCss3 size={48} />} text="CSS3" />
             <Skill icon={<SiJavascript size={48} />} text="Javascript" />

@@ -7,7 +7,6 @@ import { vercelApi } from "../pages";
 
 export default function ContactForm() {
   const [user, setUser] = useState({ userName: "", email: "", message: "" });
-  const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();

@@ -1,4 +1,3 @@
-import ContainerBlock from "../components/ContainerBlock";
 import Section from "../components/Section";
 import Skill from "../components/Skill";
 import H2 from "../components/UI/H2";

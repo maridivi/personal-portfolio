@@ -1,12 +1,7 @@
 import Section from "./Section";
 import H1 from "./UI/H1";
 import H2 from "./UI/H2";
-import {
-  ExternalLinkIcon,
-  GitHubIcon,
-  InstagramIcon,
-  TwitterIcon,
-} from "./UI/Icons";
+import { GitHubIcon, TwitterIcon } from "./UI/Icons";
 
 export default function Hero() {
   return (

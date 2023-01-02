@@ -1,11 +1,10 @@
 import Image from "next/image";
-import { projectsData } from "../data/projectsData";
 import Section from "./Section";
 import Markdown from "marked-react";
 
 import H2 from "./UI/H2";
 import H3 from "./UI/H3";
-import { ExternalLinkIcon, GitHubIcon, Icon } from "./UI/Icons";
+import { ExternalLinkIcon, GitHubIcon } from "./UI/Icons";
 import Paragraph from "./UI/Paragraph";
 
 export default function Projects({ projects }) {
@@ -59,12 +58,12 @@ const ProjectCard = ({ project }) => {
         </div>
         <div className="flex gap-2">
           {linkRepo && (
-            <a href={linkRepo}>
+            <a href={linkRepo} target="_blank" rel="noreferrer">
               <GitHubIcon />
             </a>
           )}
 
-          <a href={linkSite}>
+          <a href={linkSite} target="_blank" rel="noreferrer">
             <ExternalLinkIcon />
           </a>
         </div>

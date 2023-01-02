@@ -1,11 +1,5 @@
-import Link from "next/link";
-import { useRouter } from "next/router";
-import { useState } from "react";
 import Section from "./Section";
 import CustomLink from "./UI/CustomLink";
-import H1 from "./UI/H1";
-import H2 from "./UI/H2";
-import H3 from "./UI/H3";
 
 export default function Navbar() {
   return (

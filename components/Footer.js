@@ -1,6 +1,4 @@
 import Section from "./Section";
-import H3 from "./UI/H3";
-import Paragraph from "./UI/Paragraph";
 
 export default function Footer() {
   const getYear = () => {

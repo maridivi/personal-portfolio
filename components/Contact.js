@@ -11,17 +11,23 @@ export const vercelApi = axios.create({
 
 export default function ContactForm() {
   const [user, setUser] = useState({ userName: "", email: "", message: "" });
-
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    let data = {
+      userName: e.target.elements["name"].value,
+      email: e.target.elements["email"].value,
+      message: e.target.elements["message"].value,
+    };
+
     try {
-      const res = await vercelApi.post("/api/contact", {
-        data: {
-          userName: e.target.elements["name"].value,
-          email: e.target.elements["email"].value,
-          message: e.target.elements["message"].value,
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          Accept: "application/json, text/plain, */*",
+          "Content-Type": "application/json",
         },
+        body: JSON.stringify(data),
       });
       console.log("Response received", res);
       if (res.status === 200) {

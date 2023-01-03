@@ -3,7 +3,11 @@ import toast, { Toaster } from "react-hot-toast";
 import Section from "./Section";
 import CustomInput, { TextArea } from "./UI/CustomInput";
 import { useState } from "react";
-import { vercelApi } from "../pages";
+import axios from "axios";
+
+export const vercelApi = axios.create({
+  baseURL: process.env.VERCEL_URL ?? "http://localhost:3000/",
+});
 
 export default function ContactForm() {
   const [user, setUser] = useState({ userName: "", email: "", message: "" });

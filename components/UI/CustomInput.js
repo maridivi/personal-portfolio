@@ -16,7 +16,7 @@ export default function CustomInput(props) {
     id,
   } = props;
   return (
-    <div className="flex flex-col p-2 gap-1 ">
+    <div className="flex flex-col p-2 gap-1 max-w-xs">
       <Label label={label} />
 
       <input
@@ -40,7 +40,7 @@ export default function CustomInput(props) {
 
 export const TextArea = ({ label, onChange, inputName }) => {
   return (
-    <div className="flex flex-col p-2 gap-1">
+    <div className="flex flex-col p-2 gap-1 max-w-xs">
       <Label label={label} />
       <textarea
         rows="8"

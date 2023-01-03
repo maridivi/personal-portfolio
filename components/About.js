@@ -35,7 +35,7 @@ export default function About() {
         </div>
         <div className="flex flex-col w-5/6 md:w-3/4 mx-auto justify-center">
           <H2 className="text-yellow-300 mx-auto">Skills</H2>
-          <div className="grid grid-cols-3 mt-8 gap-3 w-3/4 sm:w-1/2 lg:w-full mx-auto">
+          <div className="grid grid-cols-3 mt-8 gap-8 w-3/4 sm:w-1/2 lg:w-full mx-auto">
             <Skill icon={<ImHtmlFive size={48} />} text="HTML 5" />
             <Skill icon={<SiCss3 size={48} />} text="CSS3" />
             <Skill icon={<SiJavascript size={48} />} text="Javascript" />

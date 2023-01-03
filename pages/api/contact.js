@@ -1,8 +1,6 @@
 require("dotenv").config();
 let nodemailer = require("nodemailer");
 
-const accountKey = process.env.DUMMY_ACCOUNT_KEY;
-
 export default async function contact(req, res) {
   const { userName, email, message } = req.body;
   try {
@@ -12,7 +10,7 @@ export default async function contact(req, res) {
         host: "smtp.gmail.com",
         auth: {
           user: "mary89dev@gmail.com",
-          pass: accountKey,
+          pass: process.env.GMAIL_PW,
         },
         secure: true,
       });

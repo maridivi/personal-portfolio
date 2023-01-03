@@ -16,7 +16,6 @@ export default async function getProjects(req, res) {
       }))
       .filter((project) => project.title);
 
-    // res.status(200).send(JSON.stringify(projects));
     return JSON.parse(JSON.stringify(projects));
   } catch (err) {
     console.log(err);

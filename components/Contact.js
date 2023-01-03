@@ -3,11 +3,6 @@ import toast, { Toaster } from "react-hot-toast";
 import Section from "./Section";
 import CustomInput, { TextArea } from "./UI/CustomInput";
 import { useState } from "react";
-import axios from "axios";
-
-export const vercelApi = axios.create({
-  baseURL: process.env.VERCEL_URL ?? "http://localhost:3000/",
-});
 
 export default function ContactForm() {
   const [user, setUser] = useState({ userName: "", email: "", message: "" });
@@ -33,7 +28,7 @@ export default function ContactForm() {
       if (res.status === 200) {
         console.log("Response succeeded!");
         const inputs = document.querySelectorAll("input, textarea");
-        console.log(inputs);
+
         inputs.forEach((input) => {
           input.value = "";
         });
@@ -50,15 +45,15 @@ export default function ContactForm() {
 
   return (
     <Section>
-      <div className="flex flex-col py-48" id="contact">
-        <H2 className="text-center text-yellow-300 ">Get in touch</H2>
+      <div className="flex flex-col py-48 items-center" id="contact">
+        <H2 className=" text-yellow-300 ">Get in touch</H2>
         <form
           onSubmit={(e) => {
             e.preventDefault();
             handleSubmit(e);
           }}
         >
-          <div className="w-96 mx-auto mt-8">
+          <div className="w-96 mt-8 max-w-xs">
             <CustomInput label="Name" inputName="name" type="text" />
             <CustomInput
               type="email"

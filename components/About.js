@@ -15,7 +15,7 @@ export default function About() {
     <Section>
       <div
         id="about"
-        className="flex flex-col gap-24 lg:gap-14 py-48 mx-auto lg:items-center max-w-4xl"
+        className="flex flex-col gap-24 lg:gap-14 py-48 mx-auto lg:items-center max-w-4xl "
       >
         <div className="flex flex-col gap-6 w-5/6 md:w-3/4 mx-auto justify-center">
           <H2 className=" text-yellow-300 mx-auto">About Me</H2>

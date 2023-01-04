@@ -2,9 +2,19 @@ import { AiOutlineGithub } from "react-icons/ai";
 import { HiOutlineExternalLink } from "react-icons/hi";
 import { BsTwitter } from "react-icons/bs";
 import { BsInstagram } from "react-icons/bs";
+import { AiFillLinkedin } from "react-icons/ai";
+import { FaProductHunt } from "react-icons/fa";
 
 export const GitHubIcon = () => {
   return <Icon icon={<AiOutlineGithub size={24} />} />;
+};
+
+export const ProductHuntIcon = () => {
+  return <Icon icon={<FaProductHunt size={24} />} />;
+};
+
+export const LinkedinIcon = () => {
+  return <Icon icon={<AiFillLinkedin size={24} />} />;
 };
 
 export const ExternalLinkIcon = () => {

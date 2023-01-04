@@ -1,7 +1,12 @@
 import Section from "./Section";
 import H1 from "./UI/H1";
 import H2 from "./UI/H2";
-import { GitHubIcon, TwitterIcon } from "./UI/Icons";
+import {
+  GitHubIcon,
+  LinkedinIcon,
+  ProductHuntIcon,
+  TwitterIcon,
+} from "./UI/Icons";
 
 export default function Hero() {
   return (
@@ -23,6 +28,20 @@ export default function Hero() {
             rel="noreferrer"
           >
             <TwitterIcon />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/marianna-di-vito-b4178676/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <LinkedinIcon />
+          </a>
+          <a
+            href="https://www.producthunt.com/@maridivi89"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <ProductHuntIcon />
           </a>
         </div>
       </div>

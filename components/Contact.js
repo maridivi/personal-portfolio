@@ -53,7 +53,7 @@ export default function ContactForm() {
             handleSubmit(e);
           }}
         >
-          <div className="w-96 mt-8 max-w-xs md:max-w-sm">
+          <div className="w-96 mt-8 max-w-xs sm:max-w-sm">
             <CustomInput label="Name" inputName="name" type="text" />
             <CustomInput
               type="email"

@@ -7,10 +7,10 @@ export default function Navbar() {
     <div className="top-0 w-full ">
       <Section>
         <div className="flex justify-between">
-          <div className=" border-yellow-300 border-[3px] px-3 py-0.5 rounded-md">
+          <div className=" border-yellow-300 border-[3px] px-3 py-0.5 rounded-md ">
             <Link href="/">
               <span
-                className={`cursor-pointer font-bold text-yellow-300 text-2xl font-chivo_mono`}
+                className={`cursor-pointer font-bold text-yellow-300 text-xl font-chivo_mono`}
               >
                 MD
               </span>

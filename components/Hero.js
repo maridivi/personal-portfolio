@@ -48,7 +48,7 @@ export default function Hero() {
         <Link href="#projects">
           <button
             type="submit"
-            className="border-yellow-400 border text-yellow-400 rounded-md w-1/3 mt-6 py-2 text-sm font-bold hover:opacity-70 "
+            className="border-yellow-400 border text-yellow-400 rounded-md w-1/3 mt-6 py-2 text-sm font-bold hover:opacity-70 max-w-xs "
           >
             My projects
           </button>

@@ -24,13 +24,11 @@ export default function About() {
             After 5 years working as a dentist, I decided to pursue my interest
             in web development and began teaching myself to code. Through online
             courses and hands-on projects, I became comfortable with HTML, CSS,
-            Javascript, and React. My background in dentistry has given me
-            unique problem-solving skills and attention to detail that I believe
-            will make me a valuable contributor to any project. I am grateful
-            for the opportunity to combine my love of technology with my desire
-            to help others and make a positive impact. I am excited to continue
-            learning and growing as a developer, and hope to find opportunities
-            where I can use my skills to make a meaningful difference.
+            Javascript, and React. <br></br> I am grateful for the opportunity
+            to combine my love of technology with my desire to help others and
+            make a positive impact. I am excited to continue learning and
+            growing as a developer, and hope to find opportunities where I can
+            use my skills to make a meaningful difference.
           </Paragraph>
         </div>
         <div className="flex flex-col w-5/6 md:w-3/4 mx-auto justify-center">

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Section from "./Section";
 import H1 from "./UI/H1";
 import H2 from "./UI/H2";
@@ -44,6 +45,14 @@ export default function Hero() {
             <ProductHuntIcon />
           </a>
         </div>
+        <Link href="#projects">
+          <button
+            type="submit"
+            className="border-yellow-400 border text-yellow-400 rounded-md w-1/3 mt-6 py-2 text-sm font-bold hover:opacity-70 "
+          >
+            My projects
+          </button>
+        </Link>
       </div>
     </Section>
   );

@@ -10,7 +10,7 @@ export default function ContainerBlock({ children, ...customMeta }) {
   const meta = {
     title: "Marianna Di Vito - Frontend Developer",
     description: ``,
-    image: "/images/avatar.jpeg",
+    image: "https://www.mariannadivito.com/images/avatar.jpeg",
     type: "website",
     ...customMeta,
   };

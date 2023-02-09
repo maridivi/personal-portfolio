@@ -21,14 +21,18 @@ export default function Navbar() {
             <CustomLink
               text="Projects"
               href="projects"
-              className="text-slate-400"
+              className="text-slate-400 hover:text-yellow-300"
             />
-            <CustomLink text="About" href="about" className="text-slate-400" />
+            <CustomLink
+              text="About"
+              href="about"
+              className="text-slate-400 hover:text-yellow-300"
+            />
 
             <CustomLink
               text="Contact"
               href="contact"
-              className="text-slate-400"
+              className="text-slate-400 hover:text-yellow-300"
             />
           </div>
         </div>

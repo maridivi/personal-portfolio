@@ -54,7 +54,7 @@ export default function ContactForm() {
           }}
         >
           <div className="w-96 mt-8 max-w-xs sm:max-w-sm">
-            <CustomInput label="Name" inputName="name" type="text" />
+            <CustomInput label="Name" inputName="name" type="text" id="name" />
             <CustomInput
               type="email"
               inputName="email"
@@ -63,8 +63,10 @@ export default function ContactForm() {
               onChange={(e) => {
                 setUser({ ...user, email: e.target.value });
               }}
+              id="email"
             />
             <TextArea
+              id="message"
               inputName="message"
               label="Message"
               onChange={(e) => {

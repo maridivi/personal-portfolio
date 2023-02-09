@@ -6,6 +6,7 @@ import H2 from "./UI/H2";
 import H3 from "./UI/H3";
 import { ExternalLinkIcon, GitHubIcon } from "./UI/Icons";
 import Paragraph from "./UI/Paragraph";
+import IconLink from "./UI/IconLink";
 
 export default function Projects({ projects }) {
   return (
@@ -58,14 +59,18 @@ const ProjectCard = ({ project }) => {
         </div>
         <div className="flex gap-2">
           {linkRepo && (
-            <a href={linkRepo} target="_blank" rel="noreferrer">
-              <GitHubIcon />
-            </a>
+            <IconLink
+              url={linkRepo}
+              label="Github repo link"
+              icon={<GitHubIcon />}
+            />
           )}
 
-          <a href={linkSite} target="_blank" rel="noreferrer">
-            <ExternalLinkIcon />
-          </a>
+          <IconLink
+            url={linkSite}
+            label="Live site link"
+            icon={<ExternalLinkIcon />}
+          />
         </div>
       </div>
     </div>

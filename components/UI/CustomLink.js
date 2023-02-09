@@ -8,10 +8,10 @@ export default function CustomLink({ href, text, className }) {
       smooth={true}
       activeClass="active"
       duration={500}
+      style={{ cursor: "pointer" }}
+      className={className}
     >
-      <span className={`${className}  cursor-pointer hover:text-yellow-300`}>
-        {text}
-      </span>
+      {text}
     </Link>
   );
 }

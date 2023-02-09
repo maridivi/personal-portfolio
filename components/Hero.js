@@ -2,6 +2,7 @@ import Link from "next/link";
 import Section from "./Section";
 import H1 from "./UI/H1";
 import H2 from "./UI/H2";
+import IconLink from "./UI/IconLink";
 import {
   GitHubIcon,
   LinkedinIcon,
@@ -16,34 +17,26 @@ export default function Hero() {
         <H1 className="text-slate-300 ">Marianna Di Vito</H1>
         <H2 className="text-slate-500">Front-end developer</H2>
         <div className="flex gap-4">
-          <a
-            href="https://github.com/maridivi"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <GitHubIcon />
-          </a>
-          <a
-            href="https://twitter.com/maridivi89"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <TwitterIcon />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/marianna-di-vito-b4178676/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <LinkedinIcon />
-          </a>
-          <a
-            href="https://www.producthunt.com/@maridivi89"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <ProductHuntIcon />
-          </a>
+          <IconLink
+            icon={<GitHubIcon />}
+            url="https://github.com/maridivi"
+            label="github link"
+          />
+          <IconLink
+            icon={<TwitterIcon />}
+            url="https://twitter.com/maridivi89"
+            label="twitter link"
+          />
+          <IconLink
+            url="https://www.linkedin.com/in/marianna-di-vito-b4178676/"
+            icon={<LinkedinIcon />}
+            label="linkedin link"
+          />
+          <IconLink
+            url="https://www.producthunt.com/@maridivi89"
+            icon={<ProductHuntIcon />}
+            label="product hunt link"
+          />
         </div>
         <Link href="#projects">
           <button
